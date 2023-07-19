@@ -1,0 +1,70 @@
+/* .parent{
+    height: 400px;
+    width: 400px;
+    background-color: hsl(200, 84%, 48%);
+    border:2px solid red;
+    border-top-left-radius: 25%;
+    margin-top: 400px;
+    margin-left: 600px;
+}
+
+.child{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    background-image: linear-gradient(to right, yellow, green,blue
+    );
+    border-radius: 70%;
+     border:2px solid hsl(200, 86%, 44%);
+     margin-top: -100px;
+}
+.parent:hover .child{
+    transform: translateY(500px);
+    transition: 2s;
+} */
+
+body{
+    background-color: rgb(57, 86, 58);
+}
+.box{
+    background-color: white;
+    width:100px;
+    height:100px;
+    margin: auto;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite alternate reverse;
+    position: relative;
+    padding: 50px;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    animation-timing-function: ease-in;
+    font-size: 2rem;
+    transform: translateZ(2000px)
+
+}
+
+@keyframes example {
+    0%   {background-color: red; left: 0px; top: 0px}
+    25%  { rotate: 35deg; border-radius: 0% 0% 0% 0%; background-color:  yellow; left: 200px; top: 0px}
+    50%  { rotate: 25deg; border-radius: 50% 0% 0% 0%; background-color: orange; left: 200px; top: 200px}
+    75%  {rotate: 360deg; border-radius: 50% 50% 0% 0%; background-color: wheat; left: 0px; top: 200px}
+    100% {rotate: 25deg; border-radius: 50% 50% 50% 50%; background-color: rgb(14, 236, 14); left: 0px; top: 0px}
+}
+
+/* .box2{
+    background-color: white;
+    width:200px;
+    height:200px;
+    margin: auto;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} */
+
+/* @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;
+    background-image: linear-gradient(to right, gold,green, orange)}
+    border-radius: 50%} */
